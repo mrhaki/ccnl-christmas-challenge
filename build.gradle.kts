@@ -11,10 +11,7 @@ repositories {
 dependencies {
     implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:2.5.1.Final"))
 
-    implementation("io.quarkus:quarkus-spring-web")
-    implementation("io.quarkus:quarkus-spring-boot-properties")
-    implementation("io.quarkus:quarkus-arc")
-    implementation("org.projectlombok:lombok:1.18.22")
+    implementation("io.quarkus:quarkus-resteasy")
 
     testImplementation("io.quarkus:quarkus-junit5-mockito")
     testImplementation("org.mockito:mockito-core:4.0.0")

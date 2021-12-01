@@ -1,17 +1,20 @@
 package nl.codecentric.xmascodechallenge.domain;
 
 
-import lombok.AllArgsConstructor;
 import nl.codecentric.xmascodechallenge.shared.Colors;
 
-import java.awt.*;
+import java.awt.Graphics2D;
 
-@AllArgsConstructor
 public class Logo {
 
     private final int x;
 
     private final int y;
+
+    public Logo(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
     public void printToCanvas(Graphics2D g2d) {
         printIcon(g2d);

@@ -1,14 +1,12 @@
 package nl.codecentric.xmascodechallenge.domain;
 
-import lombok.AllArgsConstructor;
 import nl.codecentric.xmascodechallenge.shared.Colors;
 
-import java.awt.*;
+import java.awt.Graphics2D;
 
 /**
  * @author Maik Kingma
  */
-@AllArgsConstructor
 public class ChristmasTree {
 
     private static final int MAX_WIDTH = 300;
@@ -18,6 +16,11 @@ public class ChristmasTree {
 
     private final int xRoot;
     private final int yRoot;
+
+    public ChristmasTree(int xRoot, int yRoot) {
+        this.xRoot = xRoot;
+        this.yRoot = yRoot;
+    }
 
     public void printToCanvas(Graphics2D g2d) {
         // prints Tree Stump

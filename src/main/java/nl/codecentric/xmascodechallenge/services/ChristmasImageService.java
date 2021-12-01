@@ -6,21 +6,16 @@ import nl.codecentric.xmascodechallenge.domain.Firewood;
 import nl.codecentric.xmascodechallenge.domain.Logo;
 import nl.codecentric.xmascodechallenge.domain.Rug;
 import nl.codecentric.xmascodechallenge.domain.Sock;
-import org.springframework.stereotype.Service;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/**
- * @author Maik Kingma / Roger de Jager
- */
-
-@Service
 public class ChristmasImageService {
 
     private static final String CHRISTMAS_IMAGE_JPG = "christmasImage.jpg";

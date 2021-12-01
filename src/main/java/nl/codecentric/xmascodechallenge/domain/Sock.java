@@ -1,16 +1,19 @@
 package nl.codecentric.xmascodechallenge.domain;
 
 
-import lombok.AllArgsConstructor;
+import java.awt.Color;
+import java.awt.Graphics2D;
 
-import java.awt.*;
-
-@AllArgsConstructor
 public class Sock {
 
     private final int x;
 
     private final int y;
+
+    public Sock(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
     public void printToCanvas(Graphics2D g2d) {
         g2d.setColor(Color.white);

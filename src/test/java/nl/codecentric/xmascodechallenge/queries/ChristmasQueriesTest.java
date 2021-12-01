@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
 @QuarkusTest
-public class ChristmasControllerTest {
+public class ChristmasQueriesTest {
 
     @Test
     public void testHelloEndpoint() {
         given()
-          .when().get("/xmas/vibesAtCCNL")
-          .then()
-             .statusCode(200);
+                .when().get("/xmas/vibesAtCCNL")
+                .then()
+                .statusCode(200);
     }
 
 }

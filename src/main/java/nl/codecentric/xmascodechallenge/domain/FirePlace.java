@@ -1,15 +1,13 @@
 package nl.codecentric.xmascodechallenge.domain;
 
-import lombok.AllArgsConstructor;
 import nl.codecentric.xmascodechallenge.shared.Colors;
 
-import java.awt.*;
+import java.awt.Graphics2D;
 
 /**
  * @author Maik Kingma
  */
 
-@AllArgsConstructor
 public class FirePlace {
 
     private static final int COLUMN_WIDTH = 20;
@@ -17,6 +15,11 @@ public class FirePlace {
 
     private final int xRoot;
     private final int yRoot;
+
+    public FirePlace(int xRoot, int yRoot) {
+        this.xRoot = xRoot;
+        this.yRoot = yRoot;
+    }
 
     public void printToCanvas(Graphics2D g2d) {
         g2d.setColor(Colors.DARK_GREEN.getColor());
