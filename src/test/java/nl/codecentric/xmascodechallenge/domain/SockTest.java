@@ -1,13 +1,12 @@
 package nl.codecentric.xmascodechallenge.domain;
 
-import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
 import org.mockito.Mockito;
 
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Graphics2D;
 
-@QuarkusTest
 class SockTest {
 
     @Test

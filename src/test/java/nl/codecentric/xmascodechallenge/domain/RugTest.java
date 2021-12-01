@@ -1,18 +1,14 @@
 package nl.codecentric.xmascodechallenge.domain;
 
-import io.quarkus.test.junit.QuarkusTest;
 import nl.codecentric.xmascodechallenge.shared.Colors;
 import org.junit.jupiter.api.Test;
-import org.mockito.InOrder;
 import org.mockito.Mockito;
 
-import java.awt.*;
+import java.awt.Graphics2D;
 
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.times;
 
-@QuarkusTest
 class RugTest {
 
     @Test

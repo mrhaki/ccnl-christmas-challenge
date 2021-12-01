@@ -1,19 +1,15 @@
 package nl.codecentric.xmascodechallenge.services;
 
-import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import javax.inject.Inject;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-@QuarkusTest
 class ChristmasImageServiceTest {
 
-    @Inject
-    ChristmasImageService christmasImageService;
+    private ChristmasImageService christmasImageService = new ChristmasImageService();
 
     @Test
     void getChristmasImage() throws IOException {

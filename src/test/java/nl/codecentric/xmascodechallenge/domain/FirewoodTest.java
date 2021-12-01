@@ -8,7 +8,6 @@ import org.mockito.Mockito;
 
 import java.awt.*;
 
-@QuarkusTest
 class FirewoodTest {
 
     @Test

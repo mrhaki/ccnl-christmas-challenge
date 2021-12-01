@@ -10,7 +10,6 @@ import java.awt.*;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.times;
 
-@QuarkusTest
 class FirePlaceTest {
 
     @Test
